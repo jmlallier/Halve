@@ -1,7 +1,7 @@
 # Site
-title: Halve
+title: John-Michael L&apos;Allier
 description: Stylish, Two-Column Jekyll Theme
-url: https://taylantatli.github.io/Halve
+url: https://jmlallier.github.io/
 logo: halve.png                                       # Site logo
 locale: en_US
 
@@ -31,11 +31,11 @@ sass:
 # Social Links
 #email:             email
 #google.plus:        username
-twitter:            username
+#twitter:            username
 #facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+github:             jmlallier
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:          jmlallier
 #xing:              username
 #instagram:          username
 #lastfm:            username
