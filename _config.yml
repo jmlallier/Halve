@@ -1,7 +1,7 @@
 # Site
 title: John-Michael L&apos;Allier
 description: Full Stack PHP Web Developer - Global - Jacksonville, Florida
-url: https://jmlallier.github.io/
+url: http://www.jmlallier.com/
 logo: halve.png                                       # Site logo
 locale: en_US
 
@@ -29,12 +29,12 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-#email:             email
+email:             jmlallier@me.com
 #google.plus:        username
 #twitter:            username
 #facebook:           username
 github:             jmlallier
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+stackoverflow:     6118065/jmlallier
 linkedin:          jmlallier
 #xing:              username
 #instagram:          username
