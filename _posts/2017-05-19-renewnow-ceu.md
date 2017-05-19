@@ -2,6 +2,7 @@
 layout: post
 title:  "RenewNow CEU Online Courses"
 date:   2017-05-19
+image: /images/renewnow-home.png
 excerpt: "Renew Now CEU is a continuing education course provider for various medical professions."
 tag:
 - php 
