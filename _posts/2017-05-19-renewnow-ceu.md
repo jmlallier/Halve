@@ -1,15 +1,13 @@
 ---
 layout: post
-title:  "Halve Jekyll Theme"
-date:   2016-05-29
-excerpt: "Stylish, two-column Jekyll theme for your blog."
+title:  "RenewNow CEU Online Courses"
+date:   2017-05-19
+excerpt: "Renew Now CEU is a continuing education course provider for various medical professions."
 tag:
-- jekyll 
-- halve
-- blog
-- vangeltzo
-- theme
-- vangelis
+- php 
+- square connect api
+- ajax
+- ce broker api
 ---
 
 <a href="{{ site.url }}/images/halve-home-image.png"><img src="{{ site.url }}/images/halve-home-image.png" alt="Home Page of Halve"></a>  
