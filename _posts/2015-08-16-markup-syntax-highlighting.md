@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Markup: Syntax Highlighting"
+image: /images/renewnow-home.png
 excerpt: "Post displaying the various ways of highlighting code in Markdown."
 tags: 
   - code
