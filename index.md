@@ -1,7 +1,8 @@
 ---
 layout: home
 ---
-# John-Michael L'Allier
+
+# I'm John-Michael
 
 I was homeschooled K-12, which taught me to be an eternal student. Every day was self-paced learning and I was fully responsible for understanding my coursework, finding additional learning resources textbooks weren't enough, and finishing my assignments on time. 
 
