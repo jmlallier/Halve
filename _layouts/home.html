@@ -10,7 +10,7 @@ layout: compress
 <div class="block-left">
 	<div class="content">
 		<div class="main-info">
-			<!--<a href="{{ site.data.global.url }}" class="logo"><img src="{{ site.data.global.url }}/images/{{ site.data.global.logo }}"></a>-->
+			<!--<a href="{{ site.data.global.baseurl }}" class="logo"><img src="{{ site.data.global.baseurl }}/images/{{ site.data.global.logo }}"></a>-->
 			<h1>
 				{{ site.data.global.title }}
 			</h1>
@@ -30,7 +30,7 @@ layout: compress
 </div>
 
 <div class="block-right">
-	<a href="{{ site.data.global.url }}/posts" title="posts" class="posts-menu-icon"></a>
+	<a href="{{ site.data.global.baseurl }}/posts" title="posts" class="posts-menu-icon"></a>
 	<span class="posts-link">POSTS</span>
 	<a title="project" class="projects-menu-icon">
 		<span></span>
@@ -44,6 +44,6 @@ layout: compress
 </div>
 {% include overlay.html %}
 {% include scripts.html %}
-<script src="{{ site.data.global.url }}/assets/js/canvas.js"></script>
+<script src="{{ site.data.global.baseurl }}/assets/js/canvas.js"></script>
 </body>
 </html>

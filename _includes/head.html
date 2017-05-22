@@ -14,7 +14,7 @@
   {% endif %}
   {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
   <!-- Twitter Cards -->
-  {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.data.global.url }}/{{ image }}{% endcapture %}{% endunless %}
+  {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.data.global.baseurl }}/{{ image }}{% endcapture %}{% endunless %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ image }}">
   {% else %}<meta name="twitter:card" content="summary">
@@ -28,9 +28,9 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.data.global.title }}{% endif %}">
   {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.data.global.url }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.data.global.baseurl }}">
   <meta property="og:site_name" content="{{ site.data.global.title }}">
-  <meta property="og:image" content="{{ site.data.global.url }}images/{{ site.data.global.logo }}">
+  <meta property="og:image" content="{{ site.data.global.baseurl }}images/{{ site.data.global.logo }}">
   {% capture canonical %}{{ site.data.global.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
   <link rel="canonical" href="{{ canonical }}">
   <!-- Handheld -->
@@ -40,10 +40,10 @@
   <!-- Feed -->
   {% feed_meta %}
   <!-- Favicons -->
-  <link rel="shortcut icon" type="image/png" href="{{ site.data.global.url }}/favicon.png" />
-  <link rel="shortcut icon" href="{{ site.data.global.url }}/favicon.ico" />
+  <link rel="shortcut icon" type="image/png" href="{{ site.data.global.baseurl }}/favicon.png" />
+  <link rel="shortcut icon" href="{{ site.data.global.baseurl }}/favicon.ico" />
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ site.data.global.url }}/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.data.global.baseurl }}/assets/css/main.css">
   <!-- Left Block Image for Posts -->
   {% if page.image %}
   {% capture image %}{{ page.image }}{% endcapture %}
@@ -53,12 +53,12 @@
   </style>
   {% else %}
   <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ site.data.global.url }}/{{ site.data.global.background.default-post }}) no-repeat;background-size: cover; background-position: center;}
+    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ site.data.global.baseurl }}/{{ site.data.global.background.default-post }}) no-repeat;background-size: cover; background-position: center;}
   </style>
   {% endif %}
   <!-- Left Block Images for Home and Pages -->
   <style type="text/css">
-    #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ site.data.global.url }}/{{ site.data.global.background.post-list }}) no-repeat;background-size: cover, cover; background-position: center;}
-    .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url({{ site.data.global.url }}/{{ site.data.global.background.homepage }}) no-repeat;background-size: cover; background-position: center;}
+    #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ site.data.global.baseurl }}/{{ site.data.global.background.post-list }}) no-repeat;background-size: cover, cover; background-position: center;}
+    .block-left {background: linear-gradient(rgba(44,45,51,0.6), rgba(44,45,51,0.6)), url({{ site.data.global.baseurl }}/{{ site.data.global.background.homepage }}) no-repeat;background-size: cover; background-position: center;}
   </style>
 </head>
