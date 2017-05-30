@@ -1,14 +1,38 @@
 {% if page.previous or page.next %}
 <nav class="pagination">
-  {% if page.previous %}
-  <a href="{{ site.data.global.baseurl }}{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">previous</a>
-  {% else %}
-  <a href="#" class="pagination_pager disabled">previous</a>
-  {% endif %}
-  {% if page.next %}
-  <a href="{{ site.data.global.baseurl }}{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">next</a>
-  {% else %}
-  <a href="#" class="pagination_pager disabled">next</a>
-  {% endif %}
+	{% if page.previous %}
+	<div class="previous">
+		<span>previously</span>
+		<a href="{{ site.data.global.baseurl }}{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">
+			{% if page.previous.image %}
+			<img src="/{{ page.previous.image }}" title="{{ page.previous.title }}" alt="{{ page.previous.title }} image">
+			<h3>{{ page.previous.title }}</h3>
+			{% else %}
+			previous
+			{% endif %}
+		</a>
+	</div>
+	{% else %}
+	<div class="previous" style="margin-top: 21px;">
+		<a href="#" class="pagination_pager disabled">previous</a>
+	</div>
+	{% endif %}
+	{% if page.next %}
+	<div class="next">
+		<span>up next</span>
+		<a href="{{ site.data.global.baseurl }}{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">
+			{% if page.next.image %}
+			<img src="{{ page.next.image }}" title="{{ page.next.title }}" alt="{{ page.next.title }} image">
+			<h3>{{ page.next.title }}</h3>
+			{% else %}
+			next
+			{% endif %}
+		</a>
+	</div>
+	{% else %}
+	<div class="next" style="margin-top: 21px;">
+		<a href="#" class="pagination_pager disabled">next</a>
+	</div>
+	{% endif %}
 </nav>
 {% endif %}
