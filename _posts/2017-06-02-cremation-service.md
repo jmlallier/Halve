@@ -1,12 +1,12 @@
 ---
 layout: post
 type: portfolio
-title:  "Cremation Services of Florida"
-date:   2017-06-02
+title:  "Cremation Service of Florida"
+date:   2018-01-06
 start: 2016-04-05
-end: 2017-07-03
+end: 2018-01-03
 image: /images/cremation/user_profile.png
-url: https://cremationservices.com/
+url: https://cremationserviceofflorida.com/
 excerpt: "Cremation Service of Florida is a pre- and at-need cremation arrangement service for families."
 tag:
 - portfolio
@@ -18,7 +18,7 @@ tag:
 - zurb foundation
 ---
 
-<a href="{{ site.global.data.baseurl }}/images/cremation/user_profile.png"><img src="{{ site.global.data.baseurl }}/images/cremation/user_profile.png" class="thumbnail" alt="Home Page of RenewNow CEU"></a>  
+<a href="{{ site.global.data.baseurl }}/images/cremation/user_profile.png"><img src="{{ site.global.data.baseurl }}/images/cremation/user_profile.png" class="thumbnail" alt="Home Page of Cremation Service of Florida"></a>  
 <center><b><a>Cremation Service of Florida</a></b> is a pre- and at-need cremation arrangement service for families.</center><br>
 
 ## Project Summary
