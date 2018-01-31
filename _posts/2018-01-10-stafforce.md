@@ -1,13 +1,13 @@
 ---
 layout: post
 type: portfolio
-title:  "Cremation Services of Florida"
-date:   2017-06-02
-start: 2016-04-05
-end: 2017-07-03
-image: /images/cremation/user_profile.png
-url: https://cremationservices.com/
-excerpt: "Cremation Service of Florida is a pre- and at-need cremation arrangement service for families."
+title:  "Stafforce Staffing Portal"
+date:   2018-01-10
+start: 2017-07-11
+end: 2017-11-14
+image: /images/stafforce/dashboard.png
+url: ''
+excerpt: "Stafforce Staffing Portal is a workorder and employee management app for a staffing agency."
 tag:
 - portfolio
 - php 
@@ -15,11 +15,11 @@ tag:
 - javascript
 - database design
 - mysql
-- zurb foundation
+- mdb bootstrap
 ---
 
-<a href="{{ site.global.data.baseurl }}/images/cremation/user_profile.png"><img src="{{ site.global.data.baseurl }}/images/cremation/user_profile.png" class="thumbnail" alt="Home Page of RenewNow CEU"></a>  
-<center><b><a>Cremation Service of Florida</a></b> is a pre- and at-need cremation arrangement service for families.</center><br>
+<a href="{{ site.global.data.baseurl }}/images/stafforce/dashboard.png"><img src="{{ site.global.data.baseurl }}/images/stafforce/dashboard.png" class="thumbnail" alt="Dashboard of Stafforce Staffing Portal"></a>  
+<center><b><a>Stafforce Staffing Portal</a></b> is a workorder and employee management app for a staffing agency.</center><br>
 
 ## Project Summary
 Cremation Service of Florida is a pre- and at-need cremation arrangement service for families. A member can arrange a cremation for for themselves or someone else for a death that has already occurred or beforehand. Each arrangement is assigned to an agent as a case and they are responsible for communications and verification of identities, etc.
