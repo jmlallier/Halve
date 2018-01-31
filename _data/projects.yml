@@ -3,6 +3,11 @@
   image: /images/renew/home.png
   completed: true
 
+- title: Stafforce Staffing Portal
+  url: /stafforce
+  image: /images/stafforce/dashboard.png
+  completed: true
+
 - title: Cremation Services of Florida
   url: /cremation-service
   image: /images/cremation/user_profile.png
