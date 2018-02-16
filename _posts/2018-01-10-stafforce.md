@@ -22,15 +22,11 @@ tag:
 <center><b><a>Stafforce Staffing Portal</a></b> is a workorder and employee management app for a staffing agency.</center><br>
 
 ## Project Summary
-Cremation Service of Florida is a pre- and at-need cremation arrangement service for families. A member can arrange a cremation for for themselves or someone else for a death that has already occurred or beforehand. Each arrangement is assigned to an agent as a case and they are responsible for communications and verification of identities, etc.
+Stafforce is a Jacksonville, FL based staffing company. This project provides an online system for creating and managing workorders, employees, and companies. Agents can create workorders for a company and the system algorithmically suggests suitable employees based on common skills, distance to the worksite, the employee's rating, and whether the employee has worked for the company before. 
 
-There are four user types in this web app:
-1. Admin is super-user and has access to all cases, staff, and user accounts for management purposes.
-1. Managers have access to staff and cases.
-1. Agents and assistants have access to the cases they're assigned.
-1. Users can create and manage arrangements they create, as well as be invited to other arrangements for viewing important information and making payments on pre-arranged services.
+I was the sole developer for this project and was responsible for every aspect of front- and back-end functionality. I chose to use Material Design Bootstrap for theming, as the project had many reusable components and uses for modals, form validation, menus, and other standard components. 
 
-I was the sole developer for this project and was responsible for every aspect of front- and back-end functionality. I chose to use Zurb's Foundation for theming, as the project had many reusable components and uses for modals, form validation, menus, and other standard components. I crafted nearly every function and database table from scratch for this project, improving on our older projects by implementing higher standards and best practices. 
+Every form is saved using Ajax and a log is kept of every change made to a record and which agent made the change. 
 
 ### Role:
 ---
@@ -41,16 +37,8 @@ I was the sole developer for this project and was responsible for every aspect o
 
 1. Design database schema
 1. Design logic for determining stages of arrangements
-1. Develop round robin algorithm for assigning cases to agents
-- Agents are skipped if they are taking time off
-- If a user already belongs to an arrangement and creates a new one, the agent for the first is assigned the new case
-1. Create admin portal to manage users, staff, cases, orders, etc.
-
-#### Above & beyond
-In addition to what I was required to do, I...
-* Implemented Bcrypt for password encryption
-* Used AJAX for many features (inviting family members, adding notes, saving records, updating statuses, etc.) to improve user experience
-* Used modals for improved user experience
+1. Develop algorithm for suggesting employees for workorders
+- Employees can be added to a 'do not return' list, which prohibits them from being suggested for a workorder
 
 ### Unique parts
 * Pre-need arrangements, which can be paid for over time
@@ -58,40 +46,30 @@ In addition to what I was required to do, I...
 * Statuses of arrangement
 
 ### What I learned
-- I now understand how array_map works :D
-- Data is complex
-- Working alone is hard
+- Composer for dependency management
+- Greater familiarity with the Google Maps API
+- Use a language's built-in functions whenever possible to improve performance and security. In this project, I learned about PHP's functions for differencing data. When a change is made to a record, I used array_diff to compare the old and new records and only store the differences
 
 ## Conclusion
-This project was very complex and quite difficult. I enjoyed the many challenges that required me to research and learn new practices, but I wish I had been able to work on a team for this. Working with vanilla, functional PHP instead of a framework or OOP made this project increasingly difficult as the project grew in size, so I had to be creative and intentional in abstracting reusable components, assets, and functions.
- 
-Overall, I'm happy with the results, as I was able to focus a great deal of time and effort on this project. It wasn't easy, but it was fun.
+This project helped me learn and understand a lot about efficient data interaction and data structures. I'm excited to continue developing my knowledge of algorithms and data structure theory.
 
 ## Preview
 
 {% capture images %}
-	{{ site.global.data.baseurl }}/images/cremation/arrange_1.png
-	{{ site.global.data.baseurl }}/images/cremation/arrange_2.png
-	{{ site.global.data.baseurl }}/images/cremation/gpl_agreement.png
+	{{ site.global.data.baseurl }}/images/stafforce/workorders.png
+ 	{{ site.global.data.baseurl }}/images/stafforce/workorder.png
+	{{ site.global.data.baseurl }}/images/stafforce/evaluation.png
 {% endcapture %}
-{% include gallery images=images caption="Users are guided through a series of questions to determine the type of arrangement" cols=3 %}
+{% include gallery images=images caption="The workorder overview, details, and employee removal evaluation (the answers become factors in suggesting the employee for future workorders). Skills listed on the workorder are used for employee recommendations." cols=3 %}
 
 {% capture images %}
-	{{ site.global.data.baseurl }}/images/cremation/user_dashboard.png
-	{{ site.global.data.baseurl }}/images/cremation/user_profile.png
+	{{ site.global.data.baseurl }}/images/stafforce/employees.png
+	{{ site.global.data.baseurl }}/images/stafforce/employee.png
 {% endcapture %}
-{% include gallery images=images caption="Users have a dashboard displaying each arrangement they're a part of and can view the arrangement details" cols=2 %}
+{% include gallery images=images caption="Employees overview and details page. Skills listed for employees are used for suggesting employees for a workorder." cols=2 %}
 
 {% capture images %}
-	{{ site.global.data.baseurl }}/images/cremation/obituaries.png
-	{{ site.global.data.baseurl }}/images/cremation/obituary_new.png
-	{{ site.global.data.baseurl }}/images/cremation/obituary_comment.png
+	{{ site.global.data.baseurl }}/images/cremation/company.png
+	{{ site.global.data.baseurl }}/images/cremation/search.png
 {% endcapture %}
-{% include gallery images=images caption="Obituaries can be viewed and edited (by users with permissions), and anybody can comment (comments are reviewed by agents before publishing)" cols=3 %}
-
-{% capture images %}
-	{{ site.global.data.baseurl }}/images/cremation/agent_dashboard.png
-	{{ site.global.data.baseurl }}/images/cremation/agent_user_profile.png
-	{{ site.global.data.baseurl }}/images/cremation/agent_update_status.png
-{% endcapture %}
-{% include gallery images=images caption="Agents can view and edit the cases they're assigned, as well as set statuses, make notes, and upload documents" cols=3 %}
+{% include gallery images=images caption="The company details page, which logs past employees and current and past workorders, as well as employees not to return. The search highlights matching terms or partial terms." cols=2 %}
