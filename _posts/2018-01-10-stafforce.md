@@ -69,7 +69,7 @@ This project helped me learn and understand a lot about efficient data interacti
 {% include gallery images=images caption="Employees overview and details page. Skills listed for employees are used for suggesting employees for a workorder." cols=2 %}
 
 {% capture images %}
-	{{ site.global.data.baseurl }}/images/cremation/company.png
-	{{ site.global.data.baseurl }}/images/cremation/search.png
+	{{ site.global.data.baseurl }}/images/stafforce/company.png
+	{{ site.global.data.baseurl }}/images/stafforce/search.png
 {% endcapture %}
 {% include gallery images=images caption="The company details page, which logs past employees and current and past workorders, as well as employees not to return. The search highlights matching terms or partial terms." cols=2 %}
