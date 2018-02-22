@@ -8,7 +8,17 @@
   image: /images/stafforce/dashboard.png
   completed: true
 
+- title: Doodle Rocks
+  url: /doodle
+  image: /images/doodle/home.png
+  completed: false
+
 - title: Cremation Services of Florida
   url: /cremation-service
   image: /images/cremation/user_profile.png
   completed: true
+
+- title: Church City Group
+  url:
+  image:
+  completed: false
