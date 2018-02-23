@@ -11,7 +11,7 @@
 - title: Doodle Rocks
   url: /doodle
   image: /images/doodle/home.png
-  completed: false
+  completed: true
 
 - title: Cremation Services of Florida
   url: /cremation-service
