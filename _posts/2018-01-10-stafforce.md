@@ -36,14 +36,14 @@ Every form is saved using Ajax and a log is kept of every change made to a recor
 --- 
 
 1. Design database schema
-1. Design logic for determining stages of arrangements
+1. Develop algorithm for evaluations to rate employees
 1. Develop algorithm for suggesting employees for workorders
 - Employees can be added to a 'do not return' list, which prohibits them from being suggested for a workorder
+1. Export data as Excel sheets for various reports
 
 ### Unique parts
-* Pre-need arrangements, which can be paid for over time
-* Round-robin case assignment
-* Statuses of arrangement
+* Searching between multiple tables and highlighting results
+* Suggested employees
 
 ### What I learned
 - Composer for dependency management
